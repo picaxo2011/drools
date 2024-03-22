@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kmodule xmlns="http://www.drools.org/xsd/kmodule">
-    <kbase name="rules" packages="rules">
-        <ksession name="rulesSession"/>
+<!--    <kbase name="rules" packages="rules">-->
+<!--        <ksession name="rulesSession"/>-->
+<!--    </kbase>-->
+    <kbase packages="rules.PassportValidation1">
+        <ksession name="StatelessPassportValidation1" type="stateless"/>
     </kbase>
+    <kbase packages="rules.PassportValidation2">
+        <ksession name="StatelessPassportValidation2" type="stateless"/>
+    </kbase>
+    <kbase packages="rules.PassportValidation3">
+        <ksession name="StatelessPassportValidation3" type="stateless"/>
+    </kbase>
+    <kbase packages="rules.PassportValidation4">
+        <ksession name="StatelessPassportValidation4" type="stateless"/>
+    </kbase>
+
+    <kbase packages="rules.StatefulSession.PassportValidation1">
+        <ksession name="StatefulPassportValidation1"/>
+    </kbase>
+    <kbase packages="rules.StatefulSession.PassportValidation2">
+        <ksession name="StatefulPassportValidation2"/>
+    </kbase>
+
+    <kbase packages="rules.VisaApplicationValidation.VisaApplicationValidation1">
+        <ksession name="VisaApplicationValidation1"/>
+    </kbase>
+    <kbase packages="rules.VisaApplicationValidation.VisaApplicationValidation2">
+        <ksession name="VisaApplicationValidation2"/>
+    </kbase>
+
 </kmodule>

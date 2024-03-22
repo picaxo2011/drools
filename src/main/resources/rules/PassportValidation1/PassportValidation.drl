@@ -1,0 +1,20 @@
+package rules.PassportValidation1
+
+import com.picaxo.drool.model.Passport;
+
+rule "Valid passport"
+  dialect "java"
+  when
+	$passportObject: Passport( !isExpired(), unusedVisaPages > 0 )
+  then
+	System.out.println("This passport is CORRECT");
+	$passportObject.setResult("This passport is CORRECT");
+end
+
+rule "Expired or full passport"
+  dialect "java"
+  when
+	$passportObject: Passport( isExpired() || unusedVisaPages == 0 )
+  then
+	System.out.println( "This passport is INVALID because it is expired or has no space for visa" );
+end
