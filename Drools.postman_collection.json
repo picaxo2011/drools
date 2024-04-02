@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "234329d1-1261-4aa3-b715-8dd8d02b0436",
+		"name": "Drools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23503540"
+	},
+	"item": [
+		{
+			"name": "get-stateless-validate-passports (key=1~4)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-validate-passports?key=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-validate-passports"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-stateful-validate-passports (key=1~2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-stateful-validate-passports?key=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-stateful-validate-passports"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-validate-visa-applications (key=1~2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get-validate-visa-applications?key=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-validate-visa-applications"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
